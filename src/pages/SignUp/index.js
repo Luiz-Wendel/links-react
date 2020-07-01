@@ -16,9 +16,8 @@ const SignUp = (props) => {
     signUp(data)
   }
 
-  if (account) {
+  if (account)
     return <Redirect to="/manage/links"/>
-  }
 
   return (
     <div className="container h-100 pt-5">
