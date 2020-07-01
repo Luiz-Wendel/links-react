@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { signUp } from './SignUpActions'
 
-const SignUp = () => {
+const SignUp = (props) => {
+  const { signUp } = props
+
   const submitHandler = e => {
     e.preventDefault()
 

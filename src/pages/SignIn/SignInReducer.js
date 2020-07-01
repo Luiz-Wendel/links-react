@@ -9,7 +9,7 @@ export default function (state = initialState, action) {
 
   switch (type) {
     case SIGN_IN:
-      return { ...initialState, account: payload }
+      return { ...initialState, account: { ...payload, success: true} }
     default:
       return state
   }
