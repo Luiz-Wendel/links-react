@@ -1,6 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
 
+import SignIn from './pages/SignIn'
+import SignUp from './pages/SignUp'
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -32,10 +35,10 @@ const App = () => {
             <h1>Home</h1>
           </Route>
           <Route exact path='/sign-in'>
-            <h1>Sign In</h1>
+            <SignIn />
           </Route>
           <Route exact path='/sign-up'>
-            <h1>Sign Up</h1>
+            <SignUp />
           </Route>
           <Route exact path='/manage/links/create'>
             <h1>Create Link</h1>
