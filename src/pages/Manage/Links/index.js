@@ -27,7 +27,7 @@ const Links = ({ links, linkList }) => {
 
       { links && links.length ? links.map(link => {
         return (
-          <div className="px-2 py-3 d-flex flex-row justify-content-between">
+          <div key={ link.id } className="px-2 py-3 d-flex flex-row justify-content-between">
             <div className="pr-3">
               <img src="https://via.placeholder.com/100" alt="Link icon" />
             </div>
