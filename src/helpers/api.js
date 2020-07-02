@@ -14,8 +14,19 @@ export const getHeaders = () => {
   return { Authorization: `Bearer ${token}` }
 }
 
+export const apiGet = ( path ) => {
+  const url = getApiUrl(path)
+
+  const options = {
+    headers: getHeaders()
+  }
+
+  return axios.get(url, options)
+}
+
 export const apiPost = ( path, data = {} ) => {
   const url = getApiUrl(path)
+
   const options = {
     headers: getHeaders()
   }
