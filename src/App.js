@@ -52,7 +52,7 @@ const App = ({ initAccount }) => {
           <Route exact path='/manage/links/create'>
             <CreateLink />
           </Route>
-          <Route exact path='/manage/links/edit'>
+          <Route exact path='/manage/links/edit/:id'>
             <EditLink />
           </Route>
           <Route exact path='/manage/links'>
